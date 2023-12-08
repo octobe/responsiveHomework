@@ -21,6 +21,8 @@ p {
 
 img {
   width: 100%;
+  border: 5px solid #1616c3;
+  border-radius: 25px;
 }
 
 
@@ -28,27 +30,28 @@ p {
   text-align: center;
 }
 
-div img {
+/* div img {
   width: 150px;
   height: 150px;
   display: block;
   margin: auto;
-}
+} */
 
 div {
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
+  display: block;
+  /* width: 24%; */  
+  /* margin: 5px;
+  padding: 2px; */
 }
 
 /* First media query for screens with a width of 772px or more */
 @media screen and (min-width: 772px) {
   div {
-    width: 45%;
+    display: inline-block;    
+    width: 45vw;
   }
 
-  div img {
+  img {
     max-height: 30vh;
     /* 30% of the viewport height */
   }
@@ -57,7 +60,7 @@ div {
 /* Second media query for screens with a width of 998px or more */
 @media screen and (min-width: 998px) {
   div {
-    width: 30%;
+    width: 30vw;
   }
 }
 
