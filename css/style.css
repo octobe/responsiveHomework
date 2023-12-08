@@ -42,20 +42,22 @@ div {
   padding: 2px;
 }
 
+/* First media query for screens with a width of 772px or more */
 @media screen and (min-width: 772px) {
   div {
-    display: inline-block;
-    width: 45vw;
+    width: 45%;
   }
 
-  img {
+  div img {
     max-height: 30vh;
+    /* 30% of the viewport height */
   }
 }
 
+/* Second media query for screens with a width of 998px or more */
 @media screen and (min-width: 998px) {
   div {
-    width: 30vw;
+    width: 30%;
   }
 }
 
